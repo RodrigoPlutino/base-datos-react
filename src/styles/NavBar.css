@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    cursor: pointer;
+}
+
+
+.img:hover{
+    transform: rotateY(10deg);
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links  li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav__links a{
+    transition: all 0.3s ease 0.1s;
+    color: rgb(0, 0, 0);
+}
+
+.nav__links a:hover{
+    color: #0088a9;
+    font-size: 25px;
+    
+}
+
+.nav-img {
+    height: 50% !important;
+    width: 50% !important;
+}

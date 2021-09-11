@@ -1,0 +1,33 @@
+.carousel-home {
+    .carousel-indicators, .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    .carousel-home {
+        position: absolute;
+        top: 0%;
+    }
+    .carousel-item{
+        .carousel-caption {
+            bottom: 50%;
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            display: flex !important;
+            justify-content: flex-start;
+            text-align: left;
+            flex-direction: column;
+        }
+    }
+    .carousel-item::after {
+        display: block;
+        clear: both;
+        content: "";
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+}

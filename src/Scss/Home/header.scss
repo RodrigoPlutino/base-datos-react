@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@import url("https://use.typekit.net/tfr2jbe.css");
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    width: 100%;
+    height: 6rem;
+    font: normal 18px 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.849);
+    background-color: rgba(17, 3, 3, 0);
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 0px;
+    z-index: 10000;
+    
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        text-align:center;
+        color: rgba(255, 255, 255, 0.849);
+    }
+
+    .navbar-one {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        //box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+        // animmation
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right:0;
+            height: 2px;
+            transform: scaleX(0);
+            background: rgba(255, 255, 255, 0.849);
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after{
+            transform: scaleX(1);
+
+        }
+        nav a:hover{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+}
+
+.bg-dark {
+    background-color: #ffffff00 !important;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgba(17, 3, 3, 0);
+            //box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .mobile-brand {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: row-reverse;
+        background-color: rgba(17, 3, 3, 0);
+    }
+    .desktop-brand {
+        display: none;
+    }
+}

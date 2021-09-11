@@ -1,0 +1,42 @@
+#products-section {
+    padding: 6.25rem 0;
+}
+
+.products-section-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+/* ITEMLIST CARD */
+
+.list-product-item {
+    display: flex !important;
+    width: 45%;
+    margin: 10px;
+}
+
+.list-product-item-body {
+    width: 100%;
+    height: 100%;
+}
+
+.list-product-item-body-iframe-content {
+    width: 100%;
+    height: 30rem;
+}
+
+.list-product-item-body-iframe {
+    display: block;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    object-fit: cover;
+}
+
+.list-product-item-body-body {
+    position: absolute;
+    bottom: 0px;
+}

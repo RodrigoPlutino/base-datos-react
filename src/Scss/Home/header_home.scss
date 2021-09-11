@@ -1,0 +1,34 @@
+header {
+    color: rgba(255, 255, 255, 0.6) !important;
+    background-color: #101010 !important;
+    
+    h1{
+        color: rgba(255, 255, 255, 0.835)!important;
+    }
+
+
+        // animmation
+        nav a::after {
+            background: rgba(255, 255, 255, 0.6)!important;
+        }
+        nav a:hover{
+            color: rgba(255, 255, 255, 0.6)!important;
+        }
+}
+
+.navbar {
+    background-color: #101010 !important;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+            background-color: #101010 !important;
+            //box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+}
+@media (max-width: 992px) {
+    .navbar {
+        background-color: #101010 !important;
+    }
+}

@@ -1,0 +1,147 @@
+.dadCounter{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dadCounter button{
+    width: 30px;
+    
+}
+
+.dadCounter p{
+    font-size: 20px;
+    margin: 15px;
+}
+
+
+
+
+.parentElement{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+/* 
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-column-gap: 30px;
+    font-family: sans-serif;
+}
+
+.card article{
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    transition: transform .3s;
+}
+
+.card article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.3);
+    background-color: #FFFF;
+}
+
+.card article img{
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+ */
+
+.text{
+    padding: 20px;
+    border-top: 1px solid black;
+    
+}h3{
+    text-transform: uppercase;
+    
+}button{
+    background-color: #1111;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px !important;
+}
+
+button:hover{
+    background-color: #4b4b4bc9;
+}
+
+
+.text h1{
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 768px){
+    .card{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .card article{
+        text-align: center;
+    }
+}
+
+
+.dadCounter #btn2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+    
+}
+
+#comprar{
+    width: 50%;
+}
+
+#btn2{
+    width: 100%;
+}
+
+
+
+
+.itemCart{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 50px;
+    border-radius: 20px;
+}
+.itemCart p{
+    color: black;
+    font-weight: 600;
+}
+
+.carrito{
+    margin: 0 600px;
+}
+
+
+.Home{
+    color: #FFF;
+    
+}
